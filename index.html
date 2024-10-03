@@ -3,228 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company Directory Portal</title>
+    <title>Final Examination Schedule</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
-        }
-        .box{
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 80%;
-            margin-bottom: 40px;
-            align-items: center;
-            margin: 0 auto;
-        }
-        .employee-list{
-            background-color: #fff;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-bottom: 40px;
-        }
-        .employee-list ul {
-            list-style: none;
-            padding: 0;
-        }
-        .employee-list a {
-            text-decoration: none;
-            color: #007bff;
-            font-size: 18px;
-        }
-        .employee-list a:hover {
-            color: #0056b3;
-            text-decoration: underline;
-        }
-        .employee-list li {
-            padding: 10px 0;
-            border-bottom: 1px solid #ccc;
-        }
-        .employee-list li:last-child {
-            border-bottom: none;
-        }
-        .registration-form {
-            background-color: #ffffff;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-bottom: 40px;
-        }
-        .registration-form h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .registration-form label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        .registration-form input[type="text"],
-        .registration-form input[type="email"],
-        .registration-form select {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        .registration-form input[type="submit"] {
-            width: 100%;
-            padding: 10px;
-            background-color: #28a745;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        .registration-form input[type="submit"]:hover {
-            background-color: #218838;
-        }
-        .employee-details {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-bottom: 20px;
-        }
-        table, th, td {
-            border: 1px solid #ccc;
         }
         th, td {
-            padding: 12px;
-            text-align: left;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
         }
         th {
-            background-color: #f2f2f2;
+            background-color: yellow;
         }
-        img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
+        td {
+            background-color: white;
         }
-        @media (max-width: 768px) {
-            .box {
-                width: 100%;
-                padding: 15px;
-            }
-
-            .registration-form {
-                padding: 20px;
-            }
-
-            .employee-list {
-                padding: 20px;
-            }
-
-            table, th, td {
-                font-size: 14px;
-            }
-
-            iframe {
-                width: 100%;
-                height: 300px;
-            }
+        .home {
+            background-color: pink;
         }
-
-        @media (max-width: 480px) {
-            .registration-form input[type="text"],
-            .registration-form input[type="email"],
-            .registration-form select {
-                font-size: 14px;
-                padding: 8px;
-            }
-
-            table, th, td {
-                font-size: 12px;
-            }
-
-            .employee-list a {
-                font-size: 16px;
-            }
+        .time-col {
+            background-color: lightgray;
         }
     </style>
 </head>
 <body>
-    <div class="box">
-        <div class="registration-form">
-            <h2>Employee Registration</h2>
-            <form>
-                <label for="full-name">Full Name:</label>
-                <input type="text" id="full-name" name="fullName" required>
+<table>
+    <tr>
+        <th colspan="6">Final Examination Schedule - Fall 2008</th>
+    </tr>
+    <tr>
+        <th></th>
+        <th>Monday<br>Dec. 15</th>
+        <th>Tuesday<br>Dec. 16</th>
+        <th>Wednesday<br>Dec. 17</th>
+        <th>Thursday<br>Dec. 18</th>
+        <th rowspan="5" class="home">HOME</th>
+    </tr>
+    <tr>
+        <td>8:00<br>a.m.</td>
+        <td>Data<br>Structures</td>
+        <td>Algorithms</td>
+        <td>Computer<br> Networks</td>
+        <td>Database<br>Systems</td>
+    </tr>
+    <tr>
+        <td>10:00<br>a.m.</td>
+        <td>Operating<br>Systems</td>
+        <td>Artificial<br>Intelligence</td>
+        <td>Software<br>Engineering</td>
+        <td>Web<br>Development</td>
+    </tr>
+    <tr>
+        <td>1:00<br>p.m.</td>
+        <td>Machine<br>Learning</td>
+        <td>Cyber<br>Security</td>
+        <td>Mobile<br>Computing</td>
+        <td>Human-<br>Computer<br>Interaction</td>
+    </tr>
+    <tr>
+        <td>3:00<br>p.m.</td>
+        <td>Big Data<br>Analytics</td>
+        <td>Cloud<br>Computing</td>
+        <td>Parallel<br>Computing</td>
+        <td>Computer<br>Graphics</td>
+    </tr>
+</table>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="department">Department:</label>
-                <select id="department" name="department" required>
-                    <option value="">Select Department</option>
-                    <option value="Human Resources">Human Resources</option>
-                    <option value="Marketing">Marketing</option>
-                    <option value="Finance">Finance</option>
-                    <option value="IT">IT</option>
-                    <option value="Sales">Sales</option>
-                </select>
-
-                <label for="employee-id">Employee ID:</label>
-                <input type="text" id="employee-id" name="employeeId" required>
-
-                <label for="profile-picture-url">Profile Picture URL:</label>
-                <input type="text" id="profile-picture-url" name="profilePictureUrl" required>
-
-                <input type="submit" value="Submit">
-            </form>
-        </div>
-        <div class="employee-list">
-            <h2><center>Employee-List</center></h2>
-            <ul>
-                <a href="#"><li>Jack - Jack@example.com</li></a>
-                <a href="#"><li>Ben - Ben@example.com</li></a>
-                <a href="#"><li>David - David@example.com</li></a>
-            </ul>
-        </div>
-        <div class="employee-details">
-            <h2>Employee Details</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Full Name</th>
-                        <th>Department</th>
-                        <th>Employee ID</th>
-                        <th>Profile Picture</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Jack</td>
-                        <td>Human Resources</td>
-                        <td>EMP001</td>
-                        <td><img src="https://via.placeholder.com/50" alt="Jack Profile Picture"></td>
-                    </tr>
-                    <tr>
-                        <td>Ben</td>
-                        <td>Marketing</td>
-                        <td>EMP002</td>
-                        <td><img src="https://via.placeholder.com/50" alt="Ben Profile Picture"></td>
-                    </tr>
-                    <tr>
-                        <td>David</td>
-                        <td>Finance</td>
-                        <td>EMP003</td>
-                        <td><img src="https://via.placeholder.com/50" alt="David Profile Picture"></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <h2><center>Company Location</center></h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30441.588859710468!2d78.35394061083984!3d17.49803020000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91f3fdf6bde9%3A0x752db86a6ab3be2a!2sInnomatics%20Research%20Labs!5e0!3m2!1sen!2sin!4v1727673929785!5m2!1sen!2sin" width="950" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
 </body>
 </html>
